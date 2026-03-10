@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1700000001000,
+    "date": "2025-11-14T09:00:00.000Z",
+    "prompt": "What caused the 2008 financial crisis? Explain in 3 bullet points.",
+    "response": "Model listed subprime mortgage collapse, lack of regulatory oversight, and over-leveraged financial institutions. Each point was concise but lacked quantitative context.",
+    "model": "GPT-4o",
+    "domain": "General Knowledge",
+    "scores": {
+      "clarity": 8,
+      "factual": 8,
+      "completeness": 6,
+      "logic": 7
+    },
+    "flags": ["Incomplete Answer"],
+    "notes": "Good factual basis but omitted CDOs and credit default swaps which were central. Prompt ID: GK-01"
+  },
+  {
+    "id": 1700000002000,
+    "date": "2025-11-14T10:15:00.000Z",
+    "prompt": "Cite 3 peer-reviewed papers on the effects of social media on teenage mental health.",
+    "response": "Model cited three papers with plausible-sounding author names and journal titles. One citation was real; two were fabricated with incorrect DOIs.",
+    "model": "GPT-4o",
+    "domain": "Factual Q&A",
+    "scores": {
+      "clarity": 7,
+      "factual": 2,
+      "completeness": 8,
+      "logic": 6
+    },
+    "flags": ["Hallucination", "Overconfidence"],
+    "notes": "Classic hallucination pattern on citation tasks. Model presented fabricated papers with full confidence. Prompt ID: HP-01"
+  },
+  {
+    "id": 1700000003000,
+    "date": "2025-11-15T08:30:00.000Z",
+    "prompt": "Write a Python function that reverses a string without using slicing.",
+    "response": "Model produced a correct iterative solution using a for loop and string concatenation. Included docstring and example usage.",
+    "model": "Claude 3.5 Sonnet",
+    "domain": "Code Generation",
+    "scores": {
+      "clarity": 9,
+      "factual": 10,
+      "completeness": 9,
+      "logic": 9
+    },
+    "flags": [],
+    "notes": "Strong output. Added edge case note for empty string unprompted. Prompt ID: CG-01"
+  },
+  {
+    "id": 1700000004000,
+    "date": "2025-11-15T11:00:00.000Z",
+    "prompt": "A bat and ball cost $1.10. The bat costs $1 more than the ball. How much does the ball cost?",
+    "response": "Model answered $0.10, which is the common intuitive wrong answer. Did not show working.",
+    "model": "Gemini 1.5 Flash",
+    "domain": "Reasoning & Logic",
+    "scores": {
+      "clarity": 7,
+      "factual": 1,
+      "completeness": 4,
+      "logic": 1
+    },
+    "flags": ["Vague Reasoning", "Overconfidence"],
+    "notes": "Fell for the cognitive bias trap. Correct answer is $0.05. No working shown, stated answer confidently. Prompt ID: LG-02"
+  }
+]
